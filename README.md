@@ -25,10 +25,14 @@ This avoids LLM knowledge cutoffs and provides **up-to-date answers**.
 
 User
 ↓
+
 Python Assistant (LangChain)
 ↓
+
 DuckDuckGo Search ──┐
+
 ├─ Context → LLM (Llama 3 via Ollama)
+
 Ollama Server ──────┘
 
 
