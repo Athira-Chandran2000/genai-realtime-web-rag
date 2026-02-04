@@ -1,7 +1,5 @@
 
----
 
-```markdown
 # 🌐 Real-Time AI Assistant (Web RAG)
 
 A **real-time Retrieval-Augmented Generation (RAG)** AI assistant that answers questions using **live web search**, powered by a **local LLM (Llama 3)** running via **Ollama**.  
@@ -23,7 +21,7 @@ This avoids LLM knowledge cutoffs and provides **up-to-date answers**.
 
 ## 🧠 Architecture Overview
 
-```
+
 
 User
 ↓
@@ -33,7 +31,7 @@ DuckDuckGo Search ──┐
 ├─ Context → LLM (Llama 3 via Ollama)
 Ollama Server ──────┘
 
-```
+
 
 ---
 
@@ -50,7 +48,7 @@ Ollama Server ──────┘
 
 ## 📁 Project Structure
 
-```
+
 
 genai-realtime-web-rag/
 │
@@ -61,9 +59,9 @@ genai-realtime-web-rag/
 ├── README.md             # Project documentation
 └── .gitignore
 
-````
 
----
+
+
 
 ## ⚙️ Setup Instructions (Local, Without Docker)
 
@@ -72,32 +70,31 @@ Download and install from:
 👉 https://ollama.com
 
 Pull the model:
-```bash
+
 ollama pull llama3:8b
-````
 
 ---
 
 ### 2️⃣ Create Python Environment
 
-```bash
+
 python -m venv venv
 venv\Scripts\activate   # Windows
-```
+
 
 Install dependencies:
 
-```bash
+
 pip install -r requirements.txt
-```
+
 
 ---
 
 ### 3️⃣ Run the Assistant
 
-```bash
+
 python assistant.py
-```
+
 
 ---
 
@@ -105,9 +102,9 @@ python assistant.py
 
 ### 1️⃣ Build & Run Everything
 
-```bash
+
 docker compose up --build
-```
+
 
 This will:
 
@@ -119,14 +116,14 @@ This will:
 
 ### 2️⃣ Example Interaction
 
-```
+
 🌐 Real-Time AI Assistant (Web RAG)
 Type 'exit' to quit
 
 You: What are today's trending AI topics?
 🤖 Thinking...
 🤖: Recent trends include multimodal AI models, open-source LLMs, and AI regulation discussions.
-```
+
 
 ---
 
