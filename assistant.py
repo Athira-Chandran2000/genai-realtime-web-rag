@@ -6,10 +6,12 @@ from langchain_core.runnables import RunnablePassthrough
 # LLM via Ollama
 import os
 
+
 llm = OllamaLLM(
     model="llama3:8b",
     base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 )
+
 
 
 
