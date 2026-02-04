@@ -57,12 +57,19 @@ Ollama Server ──────┘
 
 
 genai-realtime-web-rag/
+
 │
+
 ├── assistant.py          # Main RAG application
+
 ├── Dockerfile            # Docker build instructions
+
 ├── docker-compose.yml    # Multi-service orchestration
+
 ├── requirements.txt      # Python dependencies
+
 ├── README.md             # Project documentation
+
 └── .gitignore
 
 
